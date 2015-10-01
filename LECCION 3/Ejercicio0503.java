@@ -10,11 +10,12 @@ public class Ejercicio0503 {
 			
 		String linea;
 		
-		System.out.print("Por favor, introduce el valor de la base del rectángulo: ");
+		System.out.println("Conoce el Area de un rectangulo");		
+		System.out.print("Por favor, introduce el valor de la base del rectángulo en centímetros: ");
 		linea = System.console().readLine();
 		int base;
 		base = Integer.parseInt( linea );
-		System.out.print("Por favor, introduce el valor de la altura del rectángulo: ");
+		System.out.print("Por favor, introduce el valor de la altura del rectángulo en centímetros: ");
 		linea = System.console().readLine();
 		int altura;
 		altura = Integer.parseInt( linea );

@@ -10,13 +10,15 @@ public class Ejercicio0203 {
 	public static void main(String[] args) {
 
 		double euros;
-		int pesetas;
-			
+		double pesetas;
+		
 		String linea;
+		
 		System.out.print("Por favor, introduce la cantidad en euros: ");
 		linea = System.console().readLine();
 		euros = Double.parseDouble( linea );
-		pesetas = (int)(euros * 166.386);
+		
+		pesetas = (euros * 166.386);
 			
 		System.out.print("La cantidad en pesetas es " + pesetas);
   
