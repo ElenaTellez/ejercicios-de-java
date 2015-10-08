@@ -1,25 +1,25 @@
 /**
- * Ejercicio 7 Leccion 4
+ * Ejercicio 6 Leccion 4
  *
- * Realiza un programa que calcule la media de tres notas.
+ * Realiza un programa que calcule el tiempo que tardará en caer un
+ * objeto desde una altura h.
+ * t = raiz(2h/g) siendo g = 9.81 m/s2
  *
  * @author Elena Téllez
  */
-public class Ejercicio0704 {
+public class Ejercicio0604 {
 
-	public static void main(String[] args) {
+  // las constantes se declaran fuera del main
+  final static double g = 9.81;
 
-    System.out.println("Por favor, introduzca la nota de su primer examen");    
-    Double a = Double.parseDouble(System.console().readLine());    
-    System.out.print("Por favor, nota de su segundo examen");
-	Double b = Double.parseDouble(System.console().readLine());    
-	System.out.println("Por favor, introduzca la nota de su tercer examen");    
-    Double c = Double.parseDouble(System.console().readLine());  
-    
-    double a  
-    double b
-    double c
+  public static void main(String[] args) {
 
-    System.out.printf("La nota media de su examen es %.2f.\n", (a + b + c) / 3);
+    System.out.println("Cálculo del tiempo de caída de un objeto.");
+    System.out.print("Por favor, introduzca la altura (en metros) desde la que cae el objeto: ");
+    Double h = Double.parseDouble(System.console().readLine());
+
+    double s = Math.sqrt(2*h/g);
+
+    System.out.printf("El objeto tarda %.2f segundos en caer.\n", s);
   }
 }

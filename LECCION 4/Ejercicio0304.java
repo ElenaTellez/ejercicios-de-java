@@ -16,32 +16,32 @@ public class Ejercicio0304 {
 		switch (dia) {
 		
 		case 1:
-		diaSemana = "lunes";
-		break;
+			diaSemana = "lunes";
+			break;
 		
 		case 2:
-		diaSemana = "martes";
-		break;
+			diaSemana = "martes";
+			break;
 		
 		case 3:
-		diaSemana = "miercoles";
-		break;
+			diaSemana = "miercoles";
+			break;
 		
 		case 4:
-		diaSemana = "jueves";
-		break;
+			diaSemana = "jueves";
+			break;
 		
 		case 5:
-		diaSemana = "viernes";
-		break;
-		
+			diaSemana = "viernes";
+			break;
+			
 		case 6:
-		diaSemana = "sabado";
-		break;
+			diaSemana = "sabado";
+			break;
 		
 		case 7:
-		diaSemana = "domingo";
-		break;
+			diaSemana = "domingo";
+			break;
 
 		}
 

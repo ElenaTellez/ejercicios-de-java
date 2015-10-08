@@ -18,14 +18,13 @@ public class Ejercicio0404 {
     int horasTrabajadas = 0;
     
     if (horas <= 40){
-	horasTrabajadas = horas * 12;
-	System.out.println("Su salario semanal es de " + horasTrabajadas + " euros.");
-	}
+		horasTrabajadas = horas * 12;
+		System.out.println("Su salario semanal es de " + horasTrabajadas + " euros.");
+	} 
 				
 	if (horas > 40){
-	horasTrabajadas = (horas - 40) * 16;
-	System.out.println("Su salario semanal es de " + (horasTrabajadas + 480) + " euros.");
-	}
-    
+		horasTrabajadas = (horas - 40) * 16;
+		System.out.println("Su salario semanal es de " + (horasTrabajadas + 480) + " euros.");
+	}    
 	} 
 }

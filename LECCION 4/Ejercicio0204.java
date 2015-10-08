@@ -10,25 +10,31 @@ por teclado.
 public class Ejercicio0204 {
 	public static void main(String[] args) {
 	
-		System.out.print("Por favor, introduzca una hora del dia: ");
+		System.out.print("Por favor, introduzca una hora del dia en formato 24 horas: ");
 		int hora = Integer.parseInt(System.console().readLine());
 		
 		String saludo = "";		
 
-		if ((hora <= 5) && (hora >= 21)){
-		saludo = "Buenas Noches";
+		if ((hora >= 0) && (hora <= 5)){
+		saludo = "Buenas Noches, ";
 		System.out.println(saludo + " son las " + hora + " horas. ");
-		}
+		} else if ((hora >= 21) && (hora <=24)){
+			System.out.println(saludo + "Buenas noches, son las " + hora + " horas. ");
+			}
 				
 		if ((hora >= 13) && (hora <= 20)){
-		saludo = "Buenas Tardes";
+		saludo = "Buenas Tardes, ";
 		System.out.println(saludo + " son las " + hora + " horas. ");
-		}
+		} 
 		
 		if ((hora >= 6) && (hora <= 12)){
-		saludo = "Buenas Días";
+		saludo = "Buenas Días, ";
 		System.out.println(saludo + " son las " + hora + "  horas. ");
+		} 
+		
+		if (hora > 24) {
+		saludo = "Hora no válida";
+		System.out.println("Hora no válida ");	
 		}
-			
 	}	
 }
