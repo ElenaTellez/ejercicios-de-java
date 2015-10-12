@@ -10,6 +10,8 @@ public class Ejercicio0804 {
 
 	public static void main(String[] args) {
 
+    System.out.println("Este programa calcula la nota media de sus notas\n");
+    System.out.println("Recuerde que solo son válidas las notas de 0 a 10\n");
     System.out.println("Por favor, introduzca la nota de su primer examen\n");    
     Double a = Double.parseDouble(System.console().readLine());    
     System.out.println("Por favor, introduzca la nota de su segundo examen\n");
@@ -18,26 +20,26 @@ public class Ejercicio0804 {
     Double c = Double.parseDouble(System.console().readLine());  
     
     double media = (a + b + c) / 3;  
+	System.out.printf("Su nota media es %.2f.\n", media);
     
   	if (media < 5) { 
-	System.out.println("La nota de su boletín es: Insuficiente");
-	}
+		System.out.println("La nota de su boletín es: Insuficiente");
+		} 
 	
 	if((media >= 5) && (media < 6)){ 
-	System.out.println("La nota de su boletín es: Suficiente");
-	}
-	
+		System.out.println("La nota de su boletín es: Suficiente");
+		}  
+		
 	if((media >= 6) && (media < 7)){ 
-	System.out.println("La nota de su boletín es: Bien");
-	}
+		System.out.println("La nota de su boletín es: Bien");
+		}
 	
 	if ((media >= 7) && (media < 9)){ 
-	System.out.println("La nota de su boletín es: Notable");
-	}
+		System.out.println("La nota de su boletín es: Notable");
+		}
 	
 	if ((media >= 9) && (media <= 10)){ 
-	System.out.println("La nota de su boletín es: Sobresaliente");
-	}
-	
+		System.out.println("La nota de su boletín es: Sobresaliente");
+		}	
   }
 }
