@@ -19,7 +19,7 @@ public class Ejercicio1204 {
 	System.out.println("¿Se llama Luis el profesor de la asignatura de Programacion?");
 	int a = Integer.parseInt(System.console().readLine());
 	
-	int a = (verdadero);
+	int a = verdadero ;
 		
 	if (a == verdadero) {
 			System.out.println("Incorrecta");
