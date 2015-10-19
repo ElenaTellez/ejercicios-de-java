@@ -13,6 +13,7 @@ public class Ejercicio1804 {
     int n, primera = 0;
         
     System.out.print("Por favor, introduzca un número entero (de 5 cifras como máximo): ");
+<<<<<<< HEAD
     n = Integer.parseInt(System.console().readLine());   
  
     
@@ -22,14 +23,35 @@ public class Ejercicio1804 {
     
     if (( n >= 10 ) && ( n < 100 )) {
       primera = n / 10;
+=======
+    n = Integer.parseInt(System.console().readLine());  
+    
+    if (n < 0) {
+				n = (n * -1);
+		} 
+    
+    if ( n < 10 ) {
+      primera = n;
+      System.out.println("La primera cifra del número introducido es el " + primera);
+		}
+    
+    if (( n >= 10 ) && ( n < 100 )) {
+      primera = n / 10;
+      System.out.println("La primera cifra del número introducido es el " + primera);
+>>>>>>> 5c3694027455eab5bffe847c714229ff8d031021
     }
     
     if (( n >= 100 ) && ( n < 1000 )) {
       primera = n / 100;
+<<<<<<< HEAD
+=======
+      System.out.println("La primera cifra del número introducido es el " + primera);
+>>>>>>> 5c3694027455eab5bffe847c714229ff8d031021
     }
     
     if (( n >= 1000 ) && ( n < 10000 )) {
       primera = n / 1000;
+<<<<<<< HEAD
     }
     
     if ( n >= 10000 ) {
@@ -38,4 +60,16 @@ public class Ejercicio1804 {
     
     System.out.println("La primera cifra del número introducido es el " + primera);
   }
+=======
+      System.out.println("La primera cifra del número introducido es el " + primera);
+    }
+    
+    if (( n >= 10000 ) && ( n <= 99999)) {
+      primera = n / 10000;
+      System.out.println("La primera cifra del número introducido es el " + primera);
+		} else if (n > 99999) {
+				System.out.println("El número introducido no es válido. ");
+				}
+  }  
+>>>>>>> 5c3694027455eab5bffe847c714229ff8d031021
 }

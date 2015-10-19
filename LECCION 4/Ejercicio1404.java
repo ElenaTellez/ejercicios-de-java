@@ -18,13 +18,13 @@ public class Ejercicio1404 {
 		
 		if (par == 0) {
 			System.out.println("Su número es par ");
-				} else {
-				System.out.println("Su número es impar ");
+			} else {
+				System.out.println("Su número no es par, es impar ");
 				}
 				
 		if (divisible == 0) {
 			System.out.println("y además es divisible entre 5. ");
-				} else {
+			} else {
 				System.out.println("y además no es divisible entre 5. ");
 				}
 	}	

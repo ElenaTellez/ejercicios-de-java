@@ -21,7 +21,7 @@ public class Ejercicio1004 {
 			if (dia <= 21) {
 			System.out.println("Su Horoscopo es Capricornio.");
 			} else {
-			System.out.println("Su Horoscopo es Acuario.");
+				System.out.println("Su Horoscopo es Acuario.");
 			}	
 			break;
 		
@@ -29,7 +29,7 @@ public class Ejercicio1004 {
 			if  (dia <= 21) {
 			System.out.println("Su Horoscopo es Acuario.");
 			} else {
-			System.out.println("Su Horoscopo es Piscis.");
+				System.out.println("Su Horoscopo es Piscis.");
 			}	
 			break;
 		
@@ -37,7 +37,7 @@ public class Ejercicio1004 {
 			if (dia <= 21) {
 			System.out.println("Su Horoscopo es Piscis.");
 			} else {
-			System.out.println("Su Horoscopo es Aries.");
+				System.out.println("Su Horoscopo es Aries.");
 			}	
 			break;
 		
@@ -45,7 +45,7 @@ public class Ejercicio1004 {
 			if (dia <= 20) {
 			System.out.println("Su Horoscopo es Aries.");
 			} else {
-			System.out.println("Su Horoscopo es Tauro.");
+				System.out.println("Su Horoscopo es Tauro.");
 			}	
 			break;
 		
@@ -53,7 +53,7 @@ public class Ejercicio1004 {
 			if (dia <= 21) {
 			System.out.println("Su Horoscopo es Tauro.");
 			} else {
-			System.out.println("Su Horoscopo es Geminis.");
+				System.out.println("Su Horoscopo es Geminis.");
 			}	
 			break;
 		
@@ -62,7 +62,7 @@ public class Ejercicio1004 {
 			if (dia <= 21) {
 			System.out.println("Su Horoscopo es Geminis.");
 			} else {
-			System.out.println("Su Horoscopo es Cáncer.");
+				System.out.println("Su Horoscopo es Cáncer.");
 			}	
 			break;
 		
@@ -70,7 +70,7 @@ public class Ejercicio1004 {
 			if  (dia <= 22) {
 			System.out.println("Su Horoscopo es Cáncer.");
 			} else {
-			System.out.println("Su Horoscopo es Leo.");
+				System.out.println("Su Horoscopo es Leo.");
 			}	
 			break;
 		
@@ -78,7 +78,7 @@ public class Ejercicio1004 {
 			if (dia <= 22) {
 			System.out.println("Su Horoscopo es Leo.");
 			} else {
-			System.out.println("Su Horoscopo es Virgo.");
+				System.out.println("Su Horoscopo es Virgo.");
 			}	
 			break;
 			
@@ -86,7 +86,7 @@ public class Ejercicio1004 {
 			if  (dia <= 23) {
 			System.out.println("Su Horoscopo es Virgo.");
 			} else {
-			System.out.println("Su Horoscopo es Libra.");
+				System.out.println("Su Horoscopo es Libra.");
 			}	
 			break;
 			
@@ -94,7 +94,7 @@ public class Ejercicio1004 {
 			if (dia <= 22)  {
 			System.out.println("Su Horoscopo es Libra.");
 			} else {
-			System.out.println("Su Horoscopo es Escorpión.");
+				System.out.println("Su Horoscopo es Escorpión.");
 			}	
 			break;
 			
@@ -103,7 +103,7 @@ public class Ejercicio1004 {
 			if  (dia <= 21)  {
 			System.out.println("Su Horoscopo es Escorpión.");
 			} else {
-			System.out.println("Su Horoscopo es Sagitario.");
+				System.out.println("Su Horoscopo es Sagitario.");
 			}	
 			break;
 		
@@ -111,7 +111,7 @@ public class Ejercicio1004 {
 			if (dia <= 21) {
 			System.out.println("Su Horoscopo es Sagitario.");
 			} else {
-			System.out.println("Su Horoscopo es Capricornio.");
+				System.out.println("Su Horoscopo es Capricornio.");
 			}		
 			break;
 		}				
