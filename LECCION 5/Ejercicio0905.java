@@ -9,15 +9,18 @@ public class Ejercicio0905 {
 
   public static void main(String[] args) {
     
-    int numero;
-      
-    System.out.print("¡Vamos a aprender las tablas de multiplicar!\n");
-         
-    System.out.print("Por favor introduzca un número del 1 al 10: ");
-    numero = Integer.parseInt(System.console().readLine());
-
-    for (int i = 1; i < 11; i++) {         
-      System.out.println(numero + "x" + i + " = " + (numero * i));
-    }                 
+    int digito = 1;     
+    
+    System.out.print("Introduzca un número entero y le diré cuántos dígitos tiene: ");
+    int numero = Integer.parseInt(System.console().readLine());
+    
+    int n = numero;
+          
+    while (n > 10) {
+      n /= 10; // n = n/10
+      digito++; // vamos a entrar en el bucle mientras n sea mayor que 10
+    }
+    
+    System.out.println(numero + " tiene " + digito + " dígito/s.");
   }
 }

@@ -13,7 +13,7 @@ public class Ejercicio0805 {
       
     System.out.print("¡Vamos a aprender las tablas de multiplicar!\n");
          
-    System.out.print("Por favor introduzca un número del 1 al 10: ");
+    System.out.print("Por favor introduzca un número: ");
     numero = Integer.parseInt(System.console().readLine());
 
     for (int i = 1; i < 11; i++) {         

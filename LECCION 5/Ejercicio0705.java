@@ -14,33 +14,32 @@ public class Ejercicio0705 {
 
   public static void main(String[] args) {
     
-    int intentos = 1;
-    int numeroIntroducido;
-    boolean correcto = false;
+    int intentos = 0;
+    boolean salir = false; //salir es falso si quedan oportunidades y 
+                           //todavia no hemos introducido correctamente contraseña
+    
     
     do {
       System.out.print("Introduzca la combinación de la caja fuerte: ");
-
       int combinacion = Integer.parseInt(System.console().readLine());
-      combinacion = Integer.parseInt(System.console().readLine());
       
+      intentos++;
+          
       if (combinacion == 1979) {
-        correcto = true;
+        System.out.println("La combinación es correcta.");
+        salir = true;        
       } else {
         System.out.println("Combinación incorrecta");
-        }
-      
-      intentos++; //intentos = intentos + 1;
-  
-    } while((intentos <=4) && (!correcto));
-    
-    if (correcto) {
-      System.out.println("La combinación es correcta.");
-    } else {
-        System.out.println("Su caja fuerte está bloqueada.");
       }
+      
+      if ((intentos == 4) && (!salir)) {
+        System.out.println("Su caja fuerte está bloqueada.");
+        salir = true;
+      }  
+      
+  
+    } while (!salir);
   }
 }
-
 //boolean: se utiliza para las variables con dos significados: verdadero o falso, true o false, yes or no, 1 or 0. 
 // estructura: boolean variable = true 

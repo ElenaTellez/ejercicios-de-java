@@ -14,7 +14,7 @@ public class Ejercicio1005 {
   public static void main(String[] args) {
     
     double media = 0;
-    double n = 0;
+    int n = 0;
     double suma = 0;
 
     System.out.print("Vamos a calcular la media de un conjunto de números positivos elegidos por usted.\n");
