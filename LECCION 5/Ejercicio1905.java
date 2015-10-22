@@ -13,13 +13,30 @@ public class Ejercicio1905 {
     
     System.out.print("Vamos a dibujar una pirámide.\n ");
     System.out.print("Por favor, introduzca la altura que desee que tenga la pirámide.\n ");
-    int x = Integer.parseInt(System.console().readLine());
-    System.out.print("Por favor, introduzca el carácter que dibuje su pirámide.\n ");
-    char y = Char.parseChar(System.console().readLine());
+    int altura = Integer.parseInt(System.console().readLine());
     
-    for (int i = y; i <=x; i++) {
-      System.out.printf("%xd %x++d %x+=4d\n", y, y, y);
+    System.out.print("Por favor, introduzca el carácter que dibuje su pirámide.\n ");
+    String relleno = (System.console().readLine());
+    
+    int i = 0;    
+    int tamaño = 1; //pisos de la piramide
+		int espacios = altura-1; //el numero del primer caracter sera igual a la altura elegida -1 del caracter
+		
+		while (tamaño <= altura) {   //el numero de filas, las veces que entro en el bucle, ser igual a la altura elegida
+       
+			for (i = 1; i <= espacios; i++) {
+				System.out.print(" ");   // inserta espacios
+      }
+
+			for (i = 1; i < tamaño * 2; i++) { //aumento el numero de caractares cada vez entro en el bucle
+				System.out.print(relleno); // inserta relleno
+			}
+      
+			System.out.println(); //es necesario para dar orden a los bucles. 
+			
+			tamaño++; //contador, veces que eentro en el bucle. 
+			espacios--; //reduzco el numero de espacios porque inserto mas caracteres
     }
   }
 } 
-// con %3d indico que la primera columna sera a 3 espacios, y asi sucesivamente
+
