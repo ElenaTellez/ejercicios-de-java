@@ -1,4 +1,3 @@
-
 /**
  * Ejercicio 16 Lección 5
  * 
@@ -17,10 +16,10 @@ public class Ejercicio1605 {
     System.out.print("Por favor introduzca un número: ");
     int numero = Integer.parseInt(System.console().readLine());
 	
-	boolean esPrimo = true;
+    boolean esPrimo = true;
 	
     for (int i = 2; i < numero; i++) {         
-      if ((numero % i) == 0) { //el resto de dividir i entre 2 es igual a 0 no podria ser primo
+      if ((numero % i) == 0) { //el resto de dividir número entre 2 es igual a 0 no podria ser primo
         esPrimo = false;	//porque el numero primo solo se puede divider entre el mismo o 1
       } 
     }  
