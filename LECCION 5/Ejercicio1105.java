@@ -12,11 +12,11 @@ public class Ejercicio1105 {
 
   public static void main(String[] args) {
     
-    System.out.print("Introduzca un número: ");
+    System.out.print("Introduzca un número: "); //cuando utilizo print no hay salto de linea, por eso sale por columnas
     int n = Integer.parseInt(System.console().readLine());
 
     for (int i = n; i < n + 5; i++) {
-      System.out.printf("%3d %6d %9d\n", i, i * i, i * i * i);
+      System.out.printf("numero: %3d cuadrado: %6d cubo %9d\n", i, i * i, i * i * i);
     }
   }
 } // a través de la formula printf cada vez que se introduce un numero 
