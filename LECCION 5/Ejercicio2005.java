@@ -37,7 +37,7 @@ public class Ejercicio2005 {
         System.out.print(" ");
       }
       
-      if (tamaño>1) {
+      if (tamaño>1) { // para el segundo piso de la piramide
         System.out.print(relleno);
       }
       

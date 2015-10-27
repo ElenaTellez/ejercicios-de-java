@@ -22,9 +22,9 @@ public class Ejercicio1705 {
         
       for (int i=n; (i <= n+100); i++){
     
-      suma = suma + i; //suma el valor a n y lo guarda, cuando vuelvo a entrar suma el valor guardado mas n incrementado en 1+1+1+1...   
+      suma = suma + i; //suma el valor a n y1 lo guarda, cuando vuelvo a entrar suma el valor guardado mas n incrementado en 1+1+1+1...   
         
-      }   System.out.print(suma+"\n");  
+      }   System.out.print((suma -n)+"\n");  
     }     
   }
 }

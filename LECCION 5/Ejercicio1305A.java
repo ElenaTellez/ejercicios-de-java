@@ -12,7 +12,7 @@ public class Ejercicio1305A {
 
     public static void main(String[] args) {
   
-    System.out.println("Por favor, introduzca 10 números enteros: ");
+    System.out.println("Por favor, introduzca 10 números enteros y el programa le dira cuántos son positivos y cuantos negativos: ");
 
     int negativos = 0;
     int positivos = 0;
