@@ -17,43 +17,36 @@ public class Ejercicio2405 {
     
     System.out.print("Vamos a dibujar una pirámide.\n ");
     System.out.print("Por favor, introduzca la altura que desee que tenga la pirámide.\n ");
-    int altura = Integer.parseInt(System.console().readLine());
+    int alturaIntroducida = Integer.parseInt(System.console().readLine());
     
     
     
-    int i = 0;    
-    int tamaño = 1; //pisos de la piramide
-		int espacios = altura-1; //el numero de espacios del primer caracter sera igual a la altura elegida -1 del caracter
-
-    int j = 0;
+    int altura = 1;
+    int i = 0;
+    int espacios = alturaIntroducida - 1;
     
-		while (tamaño/2 <= altura) {   //el numero de filas, las veces que entro en el bucle, ser igual a la altura elegida
-       
-			for (i = 1; i <= espacios; i++) {
-				System.out.print(" ");   // inserta espacios
-      }
-
-			for (i = 1; i < (tamaño * 2); i++) { //aumento el numero de caractares cada vez entro en el bucle
-				
-        System.out.print(i); // inserta relleno de media piramide
-			} 
-       
-			System.out.println(); //es necesario para dar orden a los bucles.
-			tamaño++; //contador, veces que entro en el bucle. 
-			espacios--; //reduzco el numero de espacios porque inserto mas caracteres
-    }
+    while (altura <= alturaIntroducida) {
       
-    while (tamaño*2 <= altura) {   //el numero de filas, las veces que entro en el bucle, ser igual a la altura elegida
-       
-
-			for (j = altura-1; j < (tamaño * 2); j--) { //aumento el numero de caractares cada vez entro en el bucle
-				
-        System.out.print(j); // inserta relleno
-			}     
-       
-			
-			tamaño++; //contador, veces que entro en el bucle. 
-    }  
-    
+      // inserta espacios delante de números
+      for (i = 1; i <= espacios; i++) {
+        System.out.print(" ");
+      }
+      
+      // pinta la línea de números, media piramide con numeros de 1 a n introducido
+      for (i = 1; i < altura; i++) {
+        System.out.print(i);
+      }
+      
+      // pinta la línea de números, media piramide con numeros de  n introducido a 1
+      for (i = altura; i > 0; i--) {
+        System.out.print(i);
+      }
+      
+      System.out.println();
+      
+      altura++;
+      espacios--;
+    } // while
   }
 }
+
