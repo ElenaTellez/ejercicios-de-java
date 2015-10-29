@@ -45,7 +45,8 @@ public class Ejercicio2005 {
       tamaño++;
       espaciosPorDelante--;
       espaciosInternos += 2;
-    } // while ////////////////////////////
+    } // while 
+    
     
     // base de la pirámide
     for (i = 1; i < tamaño*2; i++) {

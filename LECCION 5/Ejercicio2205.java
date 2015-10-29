@@ -15,11 +15,11 @@ public class Ejercicio2205 {
 		boolean primo = true;
 		int i;
 			
-			for(num=3;num<=100;num++){ 		
+			for(num = 2; num <= 100;num++){ 		
 					
 				primo = true;
 				for (i = 2; i < num; i++) { // para cada número, calcularemos si es primo	
-					if (num%i == 0) primo = false;
+					if (num % i == 0) primo = false;
 					}				
 									
 				if (primo){

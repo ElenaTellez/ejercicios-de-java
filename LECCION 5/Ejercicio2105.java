@@ -35,8 +35,9 @@ public class Ejercicio2105 {
           sumaImpares +=n;
       } else {
           
-          if (n > mayorPar)
-            mayorPar = n; 
+          if (n > mayorPar) 
+            mayorPar = n; //n cambia su valor en funcion del numero introducido, 
+                          //NO ES UNA IGUALDAD SINO UNA ASIGNACION DE VALOR
         }  
     
       contador++;

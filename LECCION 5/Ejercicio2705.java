@@ -22,10 +22,10 @@ public class Ejercicio2705 {
     
     System.out.println("Los números múltiplos de 3 entre 1 y " + numero + " son: ");
     
-    for (int i=1; i<=numero;i++) {		
+    for (int i = 1; i<=numero;i++) {		
 			
-			if ((i%3 == 0) && (i<=numero)) {			
-				System.out.print(i +"  ");	
+			if ((i % 3 == 0) && (i<=numero)) {			
+				System.out.print(i + "  ");	
 				contador++;
 				suma +=i;
 			}	
