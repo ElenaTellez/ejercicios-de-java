@@ -22,7 +22,7 @@ public class Ejercicio0806 {
       }
       
      for (int apuesta = 1; apuesta <= columnas; apuesta++) {
-        resultadoPartido = (int)(Math.random() * 6) + 1;
+        resultadoPartido = (int)(Math.random() * 6) + 1; //3/6 + 2/6 + 1/6 = 6/6, por lo que reduzco la posibilidad a 6 y asigno el porcentaje
         switch(resultadoPartido) {
           case 1:
           case 2:

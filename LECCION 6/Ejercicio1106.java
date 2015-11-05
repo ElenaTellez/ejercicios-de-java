@@ -55,10 +55,10 @@ public class Ejercicio1106 {
 				System.out.println(puntuacion);
 	
 			}
-			System.out.println("El numero de suspensos es: " + suspenso);
-			System.out.println("El numero de suficientes es: " + suficiente);
-			System.out.println("El numero de bien es: " + bien);
-			System.out.println("El numero de notables es: " + notable);
-			System.out.println("El numero de sobresalientes es: " + sobresaliente);
+			System.out.println("\nEl número de suspensos es: " + suspenso);
+			System.out.println("El número de suficientes es: " + suficiente);
+			System.out.println("El número de bien es: " + bien);
+			System.out.println("El número de notables es: " + notable);
+			System.out.println("El número de sobresalientes es: " + sobresaliente);
 	}  
 }

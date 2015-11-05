@@ -14,7 +14,6 @@ public class Ejercicio1006 {
     
     String caracter = "";
     
-        
    	for (int i = 1; i <= 10; i++) {    
 			
 			int relleno = ((int)(Math.random()*6)+1);
@@ -48,7 +47,8 @@ public class Ejercicio1006 {
 					default:
 				}
 				int longitud = ((int)(Math.random()*40)+1);
-				for (int j = 1; j <=longitud; j++) { //pinta lineas
+				
+        for (int j = 1; j <=longitud; j++) { //pinta lineas
 					System.out.print(caracter);
 				}	
 				System.out.println();

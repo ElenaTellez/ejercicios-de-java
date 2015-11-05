@@ -12,17 +12,13 @@ public class Ejercicio0606 {
   public static void main(String[] args) {
 		
     System.out.println ("Adivine un número al azar entre 0 y 100 (ambos incluidos): ");
-    
-    
+  
     int oportunidades = 5;
     int numero = ((int)(Math.random()*101));
 		boolean acertado = false; 
 		int n = 0; 
-		
-		
-   
-    System.out.println(numero);
-                     
+	
+                       
     do { 
 			
 			oportunidades--;
@@ -50,7 +46,7 @@ public class Ejercicio0606 {
 		} while ((n != numero) && (oportunidades > 0));
 		
 		if ((n != numero) && (oportunidades == 0)) {
-			System.out.println("Lo sentimos, no ha acertado y ha agotado todas sus oportunidades.");
+			System.out.println("Lo sentimos, no ha acertado y ha agotado todas sus oportunidades. El número secreto era : " + numero);
 		}	
  
 		
