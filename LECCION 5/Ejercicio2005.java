@@ -12,8 +12,8 @@ public class Ejercicio2005 {
 
   public static void main(String[] args) {
     
-    System.out.print("Vamos a dibujar una pirámide.\n ");
-    System.out.print("Por favor, introduzca la altura que desee que tenga la pirámide.\n ");
+    System.out.println("Vamos a dibujar una pirámide.  ");
+    System.out.println("Por favor, introduzca la altura que desee que tenga la pirámide.  ");
     int altura = Integer.parseInt(System.console().readLine());
     
     System.out.print("Por favor, introduzca el carácter que dibuje su pirámide.\n ");
@@ -21,18 +21,20 @@ public class Ejercicio2005 {
     
     int tamaño = 1;
     int i = 0;
-    int espaciosPorDelante = altura - 1;
+    int espaciosPorDelante = altura - 1;    
     int espaciosInternos = 0;
+    
     
     while (tamaño < altura) {
       
       // inserta espacios delante
+     
+     
       for (i = 1; i <= espaciosPorDelante; i++) {
         System.out.print(" ");
-      }
+      }      
+      System.out.print(relleno); // pinta la línea
       
-      // pinta la línea
-      System.out.print(relleno);
       for (i = 1; i < espaciosInternos; i++) {
         System.out.print(" ");
       }
@@ -47,10 +49,10 @@ public class Ejercicio2005 {
       espaciosInternos += 2;
     } // while 
     
-    
     // base de la pirámide
     for (i = 1; i < tamaño*2; i++) {
       System.out.print(relleno);
     }
+    
   }
 }
