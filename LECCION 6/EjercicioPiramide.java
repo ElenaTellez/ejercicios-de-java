@@ -11,8 +11,8 @@ public class EjercicioPiramide {
 
   public static void main(String[] args) {
     
-    System.out.print("Vamos a dibujar una pirámide.\n ");
-    System.out.print("Por favor, introduzca la altura que desee que tenga la pirámide.\n ");
+    System.out.println("Vamos a dibujar una pirámide.\n ");
+    System.out.println("Por favor, introduzca la altura que desee que tenga la pirámide.\n ");
     int altura = Integer.parseInt(System.console().readLine());
     
     
