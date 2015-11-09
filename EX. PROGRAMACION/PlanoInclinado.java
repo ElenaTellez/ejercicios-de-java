@@ -21,14 +21,18 @@ public class PlanoInclinado {
     
     int i = 0;    
     int tamaño = 0; //pisos de la piramide
-    int pelota = ((int)(Math.random()*altura));  
+    int pelota = ((int)((Math.random()*altura))+1);  
 		   
 		while (tamaño <= altura) {   //el numero de filas, las veces que entro en el bucle, ser igual a la altura elegida
       for (i = 0; i < tamaño ; i++) { //aumento el numero de caractares cada vez entro en el bucle
 			System.out.print("#"); // inserta relleno
 			}
 			
-		System.out.print(pelota);   // inserta pelota		
+     if (pelota == tamaño){
+          
+		System.out.print("O"); 
+    
+    }  // inserta pelota		
 		System.out.println(); //es necesario para dar orden a los bucles. 			
 		tamaño++; //contador, veces que entro en el bucle. 
 		}

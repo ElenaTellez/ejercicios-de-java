@@ -28,8 +28,8 @@ public class Pecera {
 		String simbolo = "#";
 		
 		int espaciosInteriores = ancho - 2;		
-		int uno = ((int)(Math.random()*ancho) + (ancho - 2));		
-		int dos = ((int)(Math.random()*altura) + (altura - 2)); 
+		int uno = ((int)(Math.random()*(ancho - 2)) + 1);		
+		int dos = ((int)(Math.random()*(altura - 2))  +1); 
 		boolean coinciden = true;
 		
 		        
@@ -48,12 +48,12 @@ public class Pecera {
 			for (int j = 0; j < espaciosInteriores; j++) { //espacios interiores			
 				
 				 
-				if (uno == dos) {
+				if ((uno == j ) && (dos == i)){
 					
 					System.out.print("@");
 					
 				} else  {
-					System.out.print("l");	
+					System.out.print(" ");	
 					
 				}	
 			 		

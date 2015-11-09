@@ -6,7 +6,7 @@
 * @author Elena Téllez
 */
 
-public class Pajarita {
+public class pajaritaDos {
   public static void main(String[] args) {
 
    System.out.print("Vamos a dibujar una pirámide.\n ");
@@ -30,7 +30,7 @@ public class Pajarita {
 				System.out.print(relleno); // inserta relleno
 			}
 			
-			for (i = 1; i <= (espacios *4); i++) {
+			for (i = 1; i <= (espacios *4) -1; i++) {
 				System.out.print(" ");   // inserta espacios
       }
       for (i = 1; i < tamaño * 2; i++) { //aumento el numero de caractares cada vez entro en el bucle
@@ -79,4 +79,4 @@ public class Pajarita {
 
     
 }
-} 
+}
