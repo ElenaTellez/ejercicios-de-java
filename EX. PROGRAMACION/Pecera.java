@@ -30,7 +30,7 @@ public class Pecera {
 		int espaciosInteriores = ancho - 2;		
 		int uno = ((int)(Math.random()*(ancho - 2)) + 1);		
 		int dos = ((int)(Math.random()*(altura - 2))  +1); 
-		boolean coinciden = true;
+		 
 		
 		        
     for (int i = 0; i < ancho; i++) {   

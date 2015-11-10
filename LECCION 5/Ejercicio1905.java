@@ -20,7 +20,7 @@ public class Ejercicio1905 {
     
     int i = 0;    
     int tamaño = 1; //pisos de la piramide
-		int espacios = altura-1; //el numero del primer caracter sera igual a la altura elegida -1 del caracter
+	int espacios = altura-1; //el numero del primer caracter sera igual a la altura elegida -1 del caracter
 		
 		while (tamaño <= altura) {   //el numero de filas, las veces que entro en el bucle, ser igual a la altura elegida
        
