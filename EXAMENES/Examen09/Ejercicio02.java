@@ -17,14 +17,16 @@ public class Ejercicio02 {
     while (num > 0) {
       nuevonum = num % 10;
       if ((nuevonum % 2) == 0) {
-        contadorpar++;
+        
+        System.out.print(nuevonum);
+        
       } else {
-        contadorimpar++;
+        System.out.print(nuevonum);
       }
       num = num / 10;
     }
     
-    System.out.println("La cantidad de dígitos pares es: " + contadorpar);
-    System.out.println("La cantidad de dígitos impares es: " + contadorimpar);
+    
+    
   }
 }
