@@ -19,18 +19,10 @@ public class Ejer0407{
   
 
     for (int i = 0; i < 20; i++) {
-    numero[i] = (int)(Math.random()*20);    
-    } 
-    
-    for (int i = 0; i < 20; i++) {
+      numero[i] = (int)(Math.random()*20);    
       cuadrado[i] = numero [i] * numero [i];
-    }
-
-    for (int i = 0; i < 20; i++) {
       cubo[i] = numero [i] * numero [i] * numero [i];
-    }    
-    
-    for (int i = 0; i < 20; i++) {
+      
       //System.out.println("\t" + numero[i]+ "\t" + cuadrado[i] + "\t" + cubo[i]);
       System.out.printf("%5d %5d %5d", numero[i], cuadrado[i], cubo[i]);
       System.out.println();

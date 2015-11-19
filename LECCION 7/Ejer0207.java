@@ -11,8 +11,8 @@ del array. ¿Qué sucede con los valores de los elementos que no han sido inicia
 public class Ejer0207 {
   public static void main(String[] args) {
         
-    // se define n como un array de enteros
-    char[] simbolo = new char[9]; // se reserva espacio para 11 enteros
+    // se define simbolo como un array formado por un caracter en cada uno. Un caracter comilla simple
+    char[] simbolo = new char[9]; // se reserva espacio para 9 enteros
 
 
 simbolo[0] = 'a';
