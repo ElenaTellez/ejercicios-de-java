@@ -33,7 +33,7 @@ public class Ejer0707{
       
       if (numero[i] == numUno) {
         
-        System.out.print("'" + numDos + "'");
+        System.out.print("\"" + numDos + "\"");
       } else {
           System.out.printf(" " + numero[i]);
         }  

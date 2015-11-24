@@ -12,42 +12,30 @@ carácter.
 public class Ejer0807{
   public static void main(String[] args) {
     
-    System.out.println("Por favor, introduzca la temperatura media que ha hecho en el mes de enero:");  
-    int enero = Integer.parseInt(System.console().readLine());
+    String[]meses = {"enero", "febrero", "marzo" , "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"}; 
+    int[]media = new int[12];
     
-    System.out.println("Por favor, introduzca la temperatura media que ha hecho en el mes de febrero:");  
-    int febrero = Integer.parseInt(System.console().readLine());
-    
-    System.out.println("Por favor, introduzca la temperatura media que ha hecho en el mes de marzo:");  
-    int marzo = Integer.parseInt(System.console().readLine());
-    
-    System.out.println("Por favor, introduzca la temperatura media que ha hecho en el mes de abril:");  
-    int abril = Integer.parseInt(System.console().readLine());
-    
-    System.out.println("Por favor, introduzca la temperatura media que ha hecho en el mes de mayo:");  
-    int mayo = Integer.parseInt(System.console().readLine());
-    
-    System.out.println("Por favor, introduzca la temperatura media que ha hecho en el mes de junio:");  
-    int junio = Integer.parseInt(System.console().readLine());
-    
-    System.out.println("Por favor, introduzca la temperatura media que ha hecho en el mes de julio:");  
-    int julio = Integer.parseInt(System.console().readLine());
-    
-    System.out.println("Por favor, introduzca la temperatura media que ha hecho en el mes de agosto:");  
-    int agosto = Integer.parseInt(System.console().readLine());
-    
-    System.out.println("Por favor, introduzca la temperatura media que ha hecho en el mes de septiembre:");  
-    int septiembre = Integer.parseInt(System.console().readLine());
-    
-    System.out.println("Por favor, introduzca la temperatura media que ha hecho en el mes de octubre:");  
-    int octubre = Integer.parseInt(System.console().readLine());
-    
-    System.out.println("Por favor, introduzca la temperatura media que ha hecho en el mes de noviembre:");  
-    int noviembre = Integer.parseInt(System.console().readLine());
-    
-    System.out.println("Por favor, introduzca la temperatura media que ha hecho en el mes de diciembre:");  
-    int diciembre = Integer.parseInt(System.console().readLine());
-    
+   
+        
+    for (int i = 0; i < 12; i++) {
+      
+    System.out.print("Introduce la temperatura media de " + meses[i] + ":");
+    media[i] = Integer.parseInt(System.console().readLine());
+    }
+   
+    for (int x = 0; x < 12; x++) {
+      
+      System.out.printf("%13s",meses[x]);
+      System.out.print(": ");
+        
+      for (int i = 1; i <= media[x]; i++) {//para i menor que el valor del array 0 ya que a X le he dado valor 0 en el for
+      
+        System.out.print("█");
+      }
+      
+      System.out.print(media[x] + "º");
+      System.out.println();
+    }  
     
     
     
