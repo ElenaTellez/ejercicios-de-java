@@ -14,7 +14,7 @@ public class Ejer1007 {
   public static void main(String[] args) {
 
 
-int[] n = new int[20];
+    int[] n = new int[20];
     int[] par = new int[20];
     int[] impar = new int[20];
     int i;
