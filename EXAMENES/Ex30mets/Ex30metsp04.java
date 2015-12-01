@@ -1,21 +1,21 @@
 /**
- * Escribe un programa que pida dos números por teclado y que luego mezcle en dos números
- * diferentes los dígitos pares y los impares. Se van comprobando los dígitos de la siguiente manera:
- * primer dígito del primer número, primer dígito del segundo número, segundo dígito del primer número,
- * segundo dígito del segundo número, tercer dígito del primer número... Para facilitar el ejercicio,
- * podemos suponer que el usuario introducirá dos números de la misma longitud y que siempre habrá al
- * menos un dígito par y uno impar. Usa long en lugar de int donde sea necesario para admitir números
- * largos.
- * Ejemplo 1:
- * Por favor, introduzca un número: 9402
- * Introduzca otro número: 6782
- * El número formado por los dígitos pares es 640822
- * El número formado por los dígitos impares es 97
- * Ejemplo 2:
- * Por favor, introduzca un número: 137
- * Introduzca otro número: 909
- * El número formado por los dígitos pares es 0
- * El número formado por los dígitos impares es 19379
+ *Escribe un programa que pida dos números por teclado y que luego mezcle en dos números
+diferentes los dígitos pares y los impares. Se van comprobando los dígitos de la siguiente manera:
+primer dígito del primer número, primer dígito del segundo número, segundo dígito del primer número,
+segundo dígito del segundo número, tercer dígito del primer número... Para facilitar el ejercicio,
+podemos suponer que el usuario introducirá dos números de la misma longitud y que siempre habrá al
+menos un dígito par y uno impar. Usa long en lugar de int donde sea necesario para admitir números
+largos.
+Ejemplo 1:
+Por favor, introduzca un número: 9402
+Introduzca otro número: 6782
+El número formado por los dígitos pares es 640822
+El número formado por los dígitos impares es 97
+Ejemplo 2:
+Por favor, introduzca un número: 137
+Introduzca otro número: 909
+El número formado por los dígitos pares es 0
+El número formado por los dígitos impares es 19379
  *
  * @author Elena Téllez
  */
@@ -29,69 +29,71 @@ public class Ex30metsp04 {
     long numeroDosIntroducido = Long.parseLong(System.console().readLine());
     
     
-    long volteadoPares = 0;
-    long volteadoImpares = 0;
-        
-    long numeroDePares = 0;
-    long numeroDeImpares = 0;
-    long digito = 0;
+    long numero = numeroUnoIntroducido;
+    long volteado = 1;
+    long pares = 0;
+    long impares = 0;
+    
+    long numeroDos = numeroDosIntroducido;
+    long volteadoDos = 1;
+    long paresDos = 0;
+    long imparesDos = 0;
     
     
+    System.out.print("los dígitos impares son: ");
     
-    while (numeroUnoIntroducido > 0) { //al ser la misma longitud no es necesario repetir con numeroDosIntroducido
-                                       //ya que estoy repitiendo el bucle segun longitud 
+    while (numero > 0) {	
       
-      // comprueba el dígito del primero numero
-      digito = numeroUnoIntroducido%10;
-      numeroUnoIntroducido = numeroUnoIntroducido/10;
-      System.out.println(digito);
-      if (digito%2 == 0) {
+      volteado = (volteado * 10) + (numero % 10);
+      numero = numero/10;
+      
+    }
+    
+     while (volteado > 1) {
+      
+       
+      if (((volteado%10)%2) != 0) {     
+       
+       impares = volteado%10;
+        System.out.print(impares);
         
-         numeroDePares = numeroDePares * 10 + digito;
+      } 
+      
+      volteado /= 10;  
+    
+   
+    }     
          
-      } else {
-         
-         numeroDeImpares = numeroDeImpares * 10 + digito; 
+    while (numeroDos > 0) {	
+      
+      volteadoDos = (volteadoDos * 10) + (numeroDos % 10);
+      numeroDos = numeroDos/10;
+      
       }
+    
+     while (volteadoDos > 1) {
       
-      digito = numeroDosIntroducido%10;
-      numeroDosIntroducido = numeroDosIntroducido/10;
-      System.out.println(digito);
-      
-      if (digito%2 == 0) {
+       
+      if (((volteadoDos%10)%2) != 0) {     
+       
+        imparesDos = volteadoDos%10;
+        System.out.print(imparesDos);
         
-         numeroDePares = numeroDePares * 10 + digito;
-         
-      } else {
-         
-         numeroDeImpares = numeroDeImpares * 10 + digito; 
-      }  
+      } 
+      
+      volteadoDos /= 10;  
+     
     }  
-    
-    //Ahora ya tenemos el resultado pero hay que darle la vuelta ya que sale al reves
-    
-    System.out.println(numeroDePares);
-    System.out.println(numeroDeImpares);
-    
-    System.out.print("Numeros Pares:");
-    
-    while (numeroDePares > 0) { 
       
-      // voltea los digitos del numero par resultante
-      volteadoPares = numeroDePares%10;
-      numeroDePares = numeroDePares/10;
-      System.out.print(volteadoPares);      
-    }          
+    System.out.println();
     
-    System.out.print("\nNumeros Impares:");
+    System.out.println("Los dígitos pares son: ");
     
-    while (numeroDeImpares > 0) { //al no ser la misma longitud de numero par resultante 
-                                //hay que repetir el bucle segun longitud 
-      
-      // voltea los digitos del numero impar resultante
-      volteadoImpares = numeroDeImpares%10;
-      numeroDeImpares = numeroDeImpares/10;
-      System.out.print(volteadoImpares);      
-    } 
-  }
+    
+        
+    
+         
+         
+    
+   }
 }
