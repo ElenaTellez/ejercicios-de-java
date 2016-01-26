@@ -22,12 +22,11 @@
           
             <%  
                 for(int i = 0; i < 11; i++) {
-                    out.print("<td>");    
+                    out.print("<tr><td>");    
                     int numero = Integer.valueOf(request.getParameter("numero"));
-                    out.print(numero + " x " + i + " = ");                               
-                    int resultado = Integer.valueOf(request.getParameter("numero"));
-                    out.println(resultado * (i+1));
-                    out.println("</td></tr>");
+                    out.print(numero + "</td><td> x </td><td> " + i + " </td><td> = </td><td>");                               
+                    out.print(numero * i);
+                    out.print("</td></tr>");
                 }
             %>
         </table>
