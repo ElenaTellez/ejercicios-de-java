@@ -11,13 +11,14 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="estilos.css"/>
         <title>Ejercicio8</title>
     </head>
     <body>
-        <h1>Tabla de multiplicar</h1> <br><br>
+        <h1>Vamos a aprender las tablas de multiplicar</h1> <br><br>
           <form method="post" action="Ejercicio8.2.jsp">           
             Por favor, introduzca un numero y a continuación le mostraremos su tabla de multiplicar de ese número:
-            <input type="text" name="numero"><br>
+            <br><input type="number" name="numero" min ="0" autofocus ="autofocus"><br>
             <input type="submit" value="OK">
         </form> 
         

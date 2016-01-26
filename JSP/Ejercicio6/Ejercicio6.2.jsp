@@ -14,10 +14,12 @@
     </head>
     <body>
         <% request.setCharacterEncoding("UTF-8"); %>
-        Su candidad de euros en pesestas es:
-        <% double resultado;
-        resultado =  Double.parseDouble(request.getParameter("euros")) / 166.386; 
+        Su candidad de pesetas en euros es:
+        <% 
+        double resultado;
+        resultado =  Double.parseDouble(request.getParameter("pesetas"))/166.386; 
                 
-        out.print(resultado + " €");%>
+        out.print(resultado + " €");
+        %>
 </body>
 </html>

@@ -10,15 +10,16 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="estilos.css"/>
         <title>Ejercicio4.2</title>
     </head>
     <body>
         <% request.setCharacterEncoding("UTF-8"); %>
         Su nota media es:
-        <% double resultado;
-        resultado =  Double.parseDouble(request.getParameter("notaUno")) 
+        <% double suma;
+        suma =  (Double.parseDouble(request.getParameter("notaUno")) 
                 + Double.parseDouble(request.getParameter("notaDos")) 
-                + Double.parseDouble(request.getParameter("notaTres"))/ 3;
-        out.print(resultado);%>
+                + Double.parseDouble(request.getParameter("notaTres")));
+        out.print(suma/3);%>
 </body>
 </html>

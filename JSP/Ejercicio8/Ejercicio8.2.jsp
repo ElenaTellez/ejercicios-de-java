@@ -11,27 +11,25 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="estilos.css"/>
         <title>Ejercicio8</title>
     </head>
     <body>
+        
+        <h1>Tabla de multiplicar</h1>
+        
         <table border="2">
-            <tr>
-                <td>
-                    Tabla de multiplicar
-                </td>
-            </tr>
-                <%
-                    for(int i = 0; i < 11; i++) {
-                        out.println("<tr>");                                
-                            out.print(request.getParameter("<td>" + i + "</td>"));
-                            out.println("<td>");    
-                            int numero = Integer.valueOf(request.getParameter("numero"));
-                            out.print(numero + " x " + i + " = ");                               
-                            int resultado = Integer.valueOf(request.getParameter("numero"));
-                            out.println(resultado * (i+1));
-                        out.println("</td></tr>");
-                    }
-                %>
+          
+            <%  
+                for(int i = 0; i < 11; i++) {
+                    out.print("<td>");    
+                    int numero = Integer.valueOf(request.getParameter("numero"));
+                    out.print(numero + " x " + i + " = ");                               
+                    int resultado = Integer.valueOf(request.getParameter("numero"));
+                    out.println(resultado * (i+1));
+                    out.println("</td></tr>");
+                }
+            %>
         </table>
     </body>
 </html>

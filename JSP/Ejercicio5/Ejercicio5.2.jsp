@@ -10,14 +10,15 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="estilos.css"/>
         <title>Ejercicio5.2</title>
     </head>
     <body>
         <% request.setCharacterEncoding("UTF-8"); %>
-        Su candidad de euros en pesestas es:
+        Su candidad de euros en pesetas es:
         <% double resultado;
         resultado =  Double.parseDouble(request.getParameter("euros")) * 166.386; 
                 
-        out.print(resultado + " pesetas");%>
+        out.print((int)resultado + " pesetas");%>
     </body>
 </html>

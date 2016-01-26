@@ -10,17 +10,18 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="estilos.css"/>
         <title>Ejercicio4Jsp</title>
     </head>
     <body>
         <form method="post" action="Ejercicio4.2.jsp">
             Vamos a calcular su nota media.<br>
             Por favor, introduzca su nota(puede tener decimales):
-            <input type="text" name="notaUno"><br>
+            <input type="number" name="notaUno" step ="0.01" min ="0" max ="10"><br>
              Por favor, introduzca su nota(puede tener decimales):
-            <input type="text" name="notaDos"><br>
+            <input type="number" name="notaDos" step ="0.01" min ="0" max ="10"><br>
              Por favor, introduzca su nota(puede tener decimales):
-            <input type="text" name="notaTres"><br>
+            <input type="number" name="notaTres" step ="0.01" min ="0" max ="10"><br>
             <input type="submit" value="OK">
             </form> 
     </body>
