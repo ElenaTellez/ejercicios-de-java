@@ -1,7 +1,7 @@
 /**
 * Operaciones y asignaciones
 *
-* @author Elena Tellez
+* @author Luis J. Sánchez
 */
 public class Asignaciones {
 public static void main(String[] args) {

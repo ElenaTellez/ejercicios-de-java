@@ -1,0 +1,103 @@
+
+/**
+ * Realiza un programa que muestre por pantalla un array de 10 filas por 10 columnas relleno con
+ * números aleatorios entre 200 y 300. A continuación, el programa debe mostrar los números de la
+ * diagonal que va desde la esquina superior izquierda a la esquina inferior derecha, así como el
+ * máximo, el mínimo y la media de los números que hay en esa diagonal.
+ *
+ * @author Elena Téllez
+ */
+ 
+
+
+public class DiagonalArrayIzqDcha {
+	
+		public static void main(String[] args) {
+		
+               int[][] num = new int[10][10]; // array de 10 filas por 10 columnas
+
+    int fila;
+    int columna = 0;
+    int sumaArriba = 0;
+    int sumaAbajo = 0;
+    int sumaDiagonal = 0;
+    int sumaDiagonalDos = 0;
+    
+    int minimo = Integer.MAX_VALUE;
+    int filaMinimo = 0;
+    int columnaMinimo = 0;
+    
+    int maximo = Integer.MIN_VALUE;
+    int filaMaximo = 0;
+    int columnaMaximo = 0;
+
+     
+        
+    // Introduce valores aleatorios en el array
+    for(fila = 0; fila < 10; fila++){
+      for(columna = 0; columna < 10; columna++){
+        num[fila][columna] = (int)(Math.random() * 200) + 200;
+      }
+		}
+                
+    for(fila = 0; fila < 10; fila++){
+      for(columna = 0; columna < 10; columna++){
+         System.out.print(num[fila][columna]+ " ");
+      }
+      System.out.println();
+       
+    }
+    
+     System.out.print("\nLa diagonal principal es:    [");
+        for (int i = 0; i < 10; i++) {
+            for (int j = 1; j < 10; j++){
+                if (i == j){
+                    System.out.print( num[i][j] + " ");
+                    sumaDiagonal += num[i][j];
+                     if (num[i][j] < minimo) {  // Calcula el mínimo de la Diagonal y guarda sus coordenadas
+											minimo = num[i][j];
+											filaMinimo = i;
+											columnaMinimo = j;
+											} 
+										if (num[i][j] > maximo) {   // Calcula el máximo de la Diagonal y guarda sus coordenadas
+										maximo = num[i][j];
+										filaMaximo = i;
+										columnaMaximo = j;
+										}
+               } else if (i < j) {
+								sumaArriba += num[i][j];
+                 }else {
+									sumaAbajo += num[i][j];
+            }
+    }
+	}
+   System.out.println("]"); 
+    System.out.println("La suma de la diagonal principal es: " + sumaDiagonal);
+    System.out.println("La media de la diagonal principal es: " + sumaDiagonal/10);
+      System.out.println("El máximo es " + maximo + " y está en la fila " + filaMaximo + ", columna " + columnaMaximo);
+    System.out.println("El mínimo es " + minimo + " y está en la fila " + filaMinimo + ", columna " + columnaMinimo);
+    
+    System.out.println();
+    
+    
+    
+    
+     System.out.print("La diagonal contraria es:    [");
+        for (int i=9; i>=0; i--){
+            for (int j=0; j<10; j++){
+                if (9-i == j){ // 10 - 1 = 9
+                    System.out.print(num[i][j] +" ");
+								}
+						}
+				}				
+        System.out.print("]");
+        
+    
+
+    
+   
+    
+    
+	}
+
+}

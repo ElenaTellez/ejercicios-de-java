@@ -39,7 +39,7 @@ public class Buscaminas {
                         
                     }
                     
-                } // coloca TRES mina
+                } // coloca la mina
                 
                 for (int j = 0; j < 3; j++){
                     

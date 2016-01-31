@@ -20,6 +20,9 @@ public class ArrayNoroesteSureste {
     int numeTres = 10;
     int l = 4;
     
+    
+
+    
  
       
        int[][] num = new int[3][5]; // array de 4 filas por 4columnas
@@ -27,6 +30,9 @@ public class ArrayNoroesteSureste {
   
     
     // Lee los datos de teclado
+    
+    
+
    
      for(fila = 0; fila < 1; fila++) {
       
