@@ -1,0 +1,41 @@
+/* 
+    Document   : estilos.css
+    Created on : 19-mar-2012, 12:45:15
+    Author     : Elena Téllez
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #bcdeff;
+}
+
+p {text-align: justify;}
+
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: #242424 2px 2px 1px;
+}
+
+#principal {
+    background-color: #abcdef;
+    width: 600px;
+    margin: auto;
+    padding: 60px;
+    box-shadow: #242424 4px 4px 4px;
+    border-radius: 6px;
+    text-align: justify;
+}
+
+.capicuo { color: green; }

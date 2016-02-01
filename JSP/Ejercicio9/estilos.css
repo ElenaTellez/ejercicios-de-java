@@ -1,0 +1,29 @@
+root {
+  display: block;
+}
+
+body {
+  background-color: pink;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  color: blue;
+  text-shadow: #242424 2px 2px 2px;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 32px;
+  font-size: 18px;
+}
+
+table {
+  background-color: aquamarine;
+  margin: auto;
+  box-shadow: #242424 4px 4px 4px;
+  padding: 20px;
+  text-align: center;
+}

@@ -21,7 +21,7 @@
             Por favor, introduzca una cantidad en €(puede tener decimales):
             <input type="text" name="euros">
             <input type="submit" value="OK"><br>
-            <img src= euros.jpg width=\"20%\">
+            <img src= euros.jpg width=200px height=100px\">
         </form> 
         <form method="post" action="Ejercicio7.3.jsp">
             <b><i>Conversor de euros a pesetas</b></i><br><br>

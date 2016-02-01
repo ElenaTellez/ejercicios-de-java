@@ -9,30 +9,35 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" type="text/css" href="estilo.css"/>
+        
         <title>Piramide</title>
     </head>
     <body>
-        <div id="piramide">
+        <div>
             <%
-                int altura = Integer.parseInt(request.getParameter("num"));
-                int espacios = altura - 1;
-                int caracteres = 1;
+                int alturaIntroducida = Integer.parseInt(request.getParameter("num"));
+                int altura = 1;
+                int i = 0;
+                int espacios = alturaIntroducida-1;
+    
+                 while (altura <= alturaIntroducida) {
+      
+                for (i = 1; i <= espacios; i++) {
+                    out.print(" <img src= ./img/blanco.jpg width=60px height=15px\">");
+                }
 
-                for (int i = 1; i <= altura; i++) {    
-                    //Pinta espacios
-                    for(int x = 0; x <= espacios; x++) {
-                        out.print(" ");
-                    }
-                    espacios--;
-                    //Pinta caracteres
-                    for(int x = 1; x <= caracteres; x++) {
-                        out.print("<img src=\"./img/ladrillo.jpg\">");
-                    }
-                    caracteres = caracteres + 2;
-                    out.println("<br>");
+                 
+                for (i = 1; i < altura * 2; i++) {
+                     out.print(" <img src= ./img/ladrillo.jpg width=60px height=15px\">");
+                }
+
+                out.print("<br>");
+
+                altura++;
+                espacios--;
                 }
             %>
         </div>
     </body>
 </html>
+    

@@ -1,0 +1,60 @@
+/* 
+    Document   : estilos.css
+    Created on : 19-mar-2012, 12:45:15
+    Author     : Elena Téllez
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #bcdeff;
+}
+
+p {text-align: justify;}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    text-shadow: #242424 2px 2px 1px;
+    padding: 20px;
+}
+
+#principal {
+    background-image: url(texturaverde.jpg);
+    width: 600px;
+    height: 500px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 60px;
+    box-shadow: #242424 4px 4px 4px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+table#tablero {
+    border-width: 0px;
+    margin: auto;
+}
+
+td.blanca {
+    background-color: whitesmoke;
+    width: 40px;
+    height: 40px;
+}
+
+td.negra {
+    background-color: black;
+    width: 40px;
+    height: 40px;
+}
