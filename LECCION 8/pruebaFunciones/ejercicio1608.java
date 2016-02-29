@@ -1,12 +1,11 @@
-package pruebaFunciones.java;
-
-import matematicas.Funciones;
-
-/**
-* Ejercicio 16: Muestra los números capicúa que hay entre 1 y 99999.
+/**package pruebaFunciones.java;
+ * 
+ *  Ejercicio 16: Muestra los números capicúa que hay entre 1 y 99999.
 *
 * @author Elena Tellez
 */
+
+import matematicas.Funciones;
 
 public class ejercicio1608 {
 

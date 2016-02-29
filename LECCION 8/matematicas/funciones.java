@@ -9,7 +9,7 @@ package matematicas;
 *
 * @author Elena Tellez
 */
-public class Funciones {
+public class funciones {
     
  /**
    * Devuelve verdadero si el número que se pasa como parámetro es capicúa y

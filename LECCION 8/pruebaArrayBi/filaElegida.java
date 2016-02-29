@@ -1,12 +1,10 @@
-package pruebaArrayBi;
+package matematicas.funcionesBi;
 
 import java.util.Scanner;
 
-import matematicas.funcionesBi;
-
-import matematicas.funcionesUni;
 
 /**
+ * import matematicas.funcionesBi; import matematicas.funcionesUni;
  * Ejercicio 29-34
  * Crea una biblioteca de funciones para arrays bidimensionales (de dos dimen-
  * siones) de números enteros que contenga las siguientes funciones:

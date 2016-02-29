@@ -1,4 +1,5 @@
-package pruebaFunciones;
+/** package pruebaFunciones;
+ * */
 
 /**
 * Funciones matemÃ¡ticas de propÃ³sito general
@@ -28,10 +29,6 @@ public class digitoN {
     System.out.println("el digito es  " + digitoN(numero,posicion) );
   }		 
 }
-
-
-
-
 /**
 * 
 * digitoN: Devuelve el digito que esta en la posicion n de un nÃºmero entero. Se
