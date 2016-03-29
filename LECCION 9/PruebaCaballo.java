@@ -1,7 +1,9 @@
 /**
- * PruebaGatoSimple.java
- * Programa que prueba la clase GatoSimple
- * @author Luis José Sánchez
+ * Implementa la clase Caballo vista en un ejercicio anterior. Pruébala creando
+ * instancias y aplicándole algunos métodos. 
+ * PruebaCaballo.java
+ * Programa que prueba la clase Caballo
+ * @author Elena Téllez
  */
 
 public class PruebaCaballo {

@@ -1,4 +1,7 @@
 /**
+ * Ejercicio 1
+ * Implementa la clase Caballo vista en un ejercicio anterior. Pruébala creando
+ * instancias y aplicándole algunos métodos.
  * Caballo.java
  * Definición de la clase Caballo
  * @author Elena Téllez
