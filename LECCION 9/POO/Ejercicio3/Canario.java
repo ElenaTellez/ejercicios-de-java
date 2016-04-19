@@ -1,8 +1,3 @@
-package poo.ejercicio3;
-
-import poo.ejercicio3.Ave;
-
-import poo.ejercicio3.Animal;
 
 public class Canario extends Ave {
     
@@ -15,6 +10,14 @@ public class Canario extends Ave {
         this.edad = a;
     }
     
+    public Canario(String c, String t) {
+        super(c, t);        
+    }
+    
+    public Canario(String c, String t, int a) {
+        super(c, t);
+        this.edad = a;        
+    }
 
        
     //metodos
@@ -42,7 +45,7 @@ public class Canario extends Ave {
 
     /**
      *
-     * descripci�n Canario segun metodo de la clase Ave
+     * descripción Canario segun metodo de la clase Ave
      *
      * @param c color y t tamano
      *

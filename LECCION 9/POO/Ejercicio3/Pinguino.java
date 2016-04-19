@@ -1,10 +1,4 @@
 
-package poo.ejercicio3;
-
-import poo.ejercicio3.Ave;
-
-import poo.ejercicio3.Animal;
-
 /**
  * Clase Pinguino que hereda metodos de Ave
  * 
@@ -16,13 +10,16 @@ public class Pinguino extends Ave {
     
     private String raza; // edad del canario
 
-    public Pinguino(String a) {
-        super();
+    public Pinguino(String a, String c, String t) {
+        super(c, t);
         this.raza = a;
     }
     
+         
     //metodos
-    
+    public String getRaza(){
+		return raza;
+	}
     /**
      *
      * describe que come el pingüino
@@ -43,25 +40,10 @@ public class Pinguino extends Ave {
     @Override
 
     public void haceNido(String m) {
-        System.out.println("El pingüino no hace nido de " + m + " ,porque vive en la nieve.");
+        System.out.println("El pingüino no hace nido de " + m + " porque vive en la nieve.");
     }
 
-    /**
-     *
-     * descripción Canario segun metodo de la clase Ave
-     *
-     * @param c color y t tamano
-     *
-     }*/   
-    
-    public String toString() {       
         
-        String tamano = "mediano";
-        String color = "blanco y negro";
-        
-        return tamano + " y " + color;
-    }
-    
     @Override
     
     /**

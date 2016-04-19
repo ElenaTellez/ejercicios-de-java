@@ -1,11 +1,6 @@
-package poo.ejercicio3;
-
-import poo.ejercicio3.Animal;
 
 public class Ave extends Animal {
 
-    public static String tamano = "grande";
-    public static String color = "negra";
 
     private int metrosVolados;
     private int numeroHuevos;
@@ -18,9 +13,7 @@ public class Ave extends Animal {
     }
 
     public Ave(String c, String t) {
-        super();
-        this.tamano = t;
-        this.color = c;
+        super(c, t);        
         this.numeroHuevos = 0;
         this.metrosVolados = 0;
     }
@@ -74,15 +67,6 @@ public class Ave extends Animal {
         System.out.println("El ave hizo su nido de " + m);
     }
 
-    /**
-     *
-     * descripción Ave
-     *
-     * @param c color y t tamano
-     *
-     */
-    public String toString() {
-        return tamano + " y " + color;
-    }
+    
 
 }

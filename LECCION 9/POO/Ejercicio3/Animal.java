@@ -1,4 +1,3 @@
-package poo.ejercicio3;
 
 /**
  *
@@ -10,8 +9,16 @@ public class Animal {
 
     // atributos
     
+    private String tamano = "grande";
+    private String color = "negra";
+    
     String tipo;
     private Sexo sexo;
+    
+    public Animal (String c, String t){
+		this.color = c;
+		this.tamano = t;
+	}
 
   public Animal () {
     this.sexo = Sexo.MACHO;
@@ -30,18 +37,17 @@ public class Animal {
     /**
      * Los animales nacen
      */
-    public String toString() {
+     
+    public void caracteristica() {
 
-        String caracteristica = "";
+        System.out.println("Los animales nacen, crecen, se reproducen y mueren.");
 
-        caracteristica = "Los animales nacen, crecen, se reproducen y mueren.";
-
-        return caracteristica;
     }
 
     /**
      * Los animales nacen
      */
+     
     public void nacer() {
 
         System.out.println("- nacen: ¡Que bello es vivir!");
@@ -50,9 +56,10 @@ public class Animal {
     /**
      * Los animales crecen
      */
+     
     public void crecer() {
 
-        System.out.println(" - crecen: Me hago mayor");
+        System.out.println("- crecen: Me hago mayor");
     }
 
     /**
@@ -60,7 +67,18 @@ public class Animal {
      */
     public void morir() {
 
-        System.out.println(" - mueren: Llego mi hora");
+        System.out.println("- mueren: Llego mi hora");
+    }
+    
+    /**
+     *
+     * descripción Ave
+     *
+     * @param c color y t tamano
+     *
+     */
+    public String toString() {
+        return tamano + " y " + color;
     }
 
 }

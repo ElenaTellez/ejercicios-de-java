@@ -1,4 +1,3 @@
-package poo.ejercicio3;
 
 /**
 *  

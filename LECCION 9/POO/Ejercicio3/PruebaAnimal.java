@@ -1,10 +1,7 @@
-package poo.ejercicio3;
+
 
 import java.util.Scanner;
 
-import poo.ejercicio3.Ave;
-
-import poo.ejercicio3.Animal;
 
 /**
  * Ejercicio 3
@@ -25,21 +22,15 @@ public class PruebaAnimal {
 
         Animal General = new Animal();
         Ave Aveztruz = new Ave("Negra", "Grande");
-        Canario Piolin = new Canario(7);
-        Pinguino HappyFeet = new Pinguino("Pinguino Emperador");
+        Canario Piolin = new Canario("Amarillo", "pequeño", 7);
+        Pinguino HappyFeet = new Pinguino("Pinguino Emperador", "Blanco y negro", "mediano");
         Gato Felix = new Gato ("Felix", "persa", "macho");
         Mamifero Ballena = new Mamifero (Sexo.HEMBRA); 
-        
-        /**
-         * 
-         * Perro Pluto = new Perro (pelota); 
-         * Lagarto (Guancho) = new Lagarto(escamas);
-         */
-        
+                
         System.out.println("En el Planeta tenemos dos tipos de seres: los seres vivos y los seres inertes.");
         System.out.println("Los seres vivos forman el reino animal y se distinguen de los seres inertes porque:");
 
-        System.out.println(General);
+        General.caracteristica();
         General.nacer();
         General.crecer();
         General.morir();
@@ -49,7 +40,6 @@ public class PruebaAnimal {
         System.out.println("El aveztruz es un tipo de ave.");
         System.out.print("El aveztruz es: ");
         System.out.println(Aveztruz);
-
         System.out.println("¿Cuantos huevos puso el aveztruz el jueves?");
         int huevos = Integer.parseInt(sc.nextLine());
         Aveztruz.poneHuevos(huevos);
@@ -66,7 +56,7 @@ public class PruebaAnimal {
         metros = Integer.parseInt(sc.nextLine());
         Aveztruz.vuela(metros);
         System.out.println("El Aveztruz recorrió:");
-        System.out.print(Ave.getcuentaMetros() + "metros.");
+        System.out.print(Ave.getcuentaMetros() + " metros.");
 
         System.out.println("Para el nido, el aveztruz encontró paja y palos");
         String material = " paja";
@@ -84,10 +74,11 @@ public class PruebaAnimal {
         
         System.out.println();
         
-        System.out.println("Happy Feet es otro tipo de ave. Es un pingüino.");
+        System.out.println("Happy Feet es otro tipo de ave. Es un ");
+        System.out.println(HappyFeet.getRaza() + ".");
         System.out.println("Happy Feet es: ");
-        System.out.println(HappyFeet);
-
+        System.out.println(HappyFeet + ".");
+        
         HappyFeet.comePescado();
         System.out.println();
 
@@ -102,7 +93,7 @@ public class PruebaAnimal {
         System.out.println();
         System.out.println(Felix);
         Felix.come("pescado");
-        System.out.println("Si le das de comer otra cosa que no se pescado al gato:");
+        System.out.println("Si le das de comer otra cosa que no sea pescado al gato:");
         Felix.come("hormigas");
         Felix.ronronea();
         Felix.maulla();
@@ -112,8 +103,6 @@ public class PruebaAnimal {
         System.out.println("Los mamíferos no nacen de huevos.");
         Ballena.amamanta();   
         
-            
-
         sc.close(); 
 
     }

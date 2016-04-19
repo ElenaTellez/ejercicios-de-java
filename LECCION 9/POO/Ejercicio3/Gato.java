@@ -1,4 +1,3 @@
-package poo.ejercicio3;
 
 /**
  * Gato 
@@ -16,7 +15,7 @@ public class Gato {
          
     this.nombre = c;
     this.raza = e;
-    this.sexo = c;
+    this.sexo = g;
        
    }
     

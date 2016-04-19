@@ -1,4 +1,3 @@
-package Ejercicio1ArrayObj;
 import java.util.Scanner;
 
 /**
@@ -36,7 +35,7 @@ public class PruebaGato {
       (gatito[i]).setSexo(sexoIntroducido);
     } // for i
 
-System.out.println("Los datos introducidos son los siguientes:");
+	System.out.println("Los datos introducidos son los siguientes:");
 
     for ( int i = 0; i < 4; i++) {
       System.out.println(gatito[i]);

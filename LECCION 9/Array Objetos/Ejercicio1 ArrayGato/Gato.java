@@ -1,6 +1,3 @@
-package Ejercicio1ArrayObj;
-import java.util.Scanner;
-
 /**
  * Gato.java
  * Definición de la clase Gato
