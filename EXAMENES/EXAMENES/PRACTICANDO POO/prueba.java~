@@ -1,0 +1,49 @@
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+
+public class prueba {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		 
+		Scanner s = new Scanner(System.in);
+
+		HashMap<String, String> m = new HashMap<String, String>();
+		HashMap<String, String> aux = new HashMap<String, String>();
+
+		m.put("caliente", "hot");
+		m.put("ardiente", "hot");
+		m.put("candente", "hot");
+		m.put("abrasador", "hot");
+		m.put("frío", "cold");
+		m.put("gélido", "cold");
+		m.put("helado", "cold");
+		m.put("simpatico", "fun");
+		m.put("alegre", "fun");
+		m.put("divertido", "fun");
+		m.put("listo", "clever");
+		m.put("inteligente", "clever");
+		m.put("tonto", "silly");
+		m.put("torpe", "silly");
+		m.put("lento", "silly");
+		m.put("guapa", "pretty");
+		m.put("feo", "uncly");
+		
+		 System.out.print("Introduzca una palabra en español: ");
+		 String palabraIntro = s.nextLine();
+		 
+		 if (m.containsKey(palabraIntro)){
+			 m.get(palabraIntro);
+			 
+				 	if ((m.getValue()).equals(m.get(palabraIntro))){
+					System.out.print(m.getKey() + "\t");
+					 
+					 
+		 
+			 }
+		 }
+	}
+}

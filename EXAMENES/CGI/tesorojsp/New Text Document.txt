@@ -1,0 +1,153 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>TESORO</title>
+<style>
+	.centro{
+		text-aling:center;
+	}
+	body{
+		background-color:#FFFF00;
+	}
+</style>
+</head>
+<body>
+<div class="centro"></div>
+	   <h1>BIENVENIDO AL JUEGO DEL TESORO</h1><br>
+        <H2>INTRODUCE UNA COORDENADA ENTRE 0 Y 4</H2><br>
+        <form action="buscaTesoro.jsp">
+            
+           
+      <%
+	        int contador=0;//para que vaya aumentado el valor del char
+	       
+      		int coordenadax=0;//pasar el valor recogido a entero
+			int coordenaday=0;//pasar el valor recogido a entero
+			int tesorox=0;//variables para recoger coordenadas de minas y tesoros
+			int tesoroy=0;
+			int minax=0;
+			int minay=0;
+			int mapa[][]=new int[5][5];//array del mapa
+			
+      		String guardar="hola";
+
+      		String	mapa2[]=new String[25];
+
+      		char variableChar=' ';
+      		String encontrado = "";
+      
+      		
+      	if((request.getParameter("x")!=null) && (request.getParameter("y")!=null)){
+      	
+			String x=request.getParameter("x");//valor recogido por teclado
+			String y=request.getParameter("y");//valor recogido por teclado
+			 coordenadax=Integer.valueOf(x);//pasar el valor recogido a entero
+			 coordenaday=Integer.valueOf(y);//pasar el valor recogido a entero
+			 guardar=request.getParameter("guardar");
+			
+			
+			// char[] cambio = guardar.toCharArray();//el string lo convierte en aaray de char
+			
+		
+			for(int i=0;i<25;i++){//rellena el arra con los datos de la variable
+			
+						mapa[contador/5][contador%5]=Integer.parseInt(String.valueOf(guardar.charAt(contador))); 	
+					
+						contador++;
+
+				}
+			
+			if(mapa[coordenadax][coordenaday] == 0){
+				mapa[coordenadax][coordenaday] = 3;	
+			}else if(mapa[coordenadax][coordenaday] == 1){
+				encontrado = "mina";
+			}else if(mapa[coordenadax][coordenaday] == 2){
+				encontrado = "tesoro";
+			}
+				
+			
+			if(encontrado.equals("mina")){
+				out.print("<h1 class=\"centro\">Has perdido</h1>");
+			}else if(encontrado.equals("tesoro")){
+				out.print("<h1 class=\"centro\">Has ganado</h1>");
+			}
+			
+			}else{
+			
+				minax=(int)(Math.random()*5);//valores aleatorios de la mina y el tesoro
+				minay=(int)(Math.random()*5);
+			
+				do{
+					tesorox=(int)(Math.random()*5);
+					tesoroy=(int)(Math.random()*5);
+				}while(tesorox==minax && tesoroy==minay&&contador==0);
+			
+			
+			for(int i=0;i<5;i++){//rellena el array de ceros,introduce el tesoro y la mina
+				for(int j=0;j<5;j++){
+					if (i==minax&&j==minay){
+						mapa[i][j]=1;
+					}else if(i==tesorox&&j==tesoroy){
+						mapa[i][j]=2;
+					}else{
+						mapa[i][j]=0; 
+					}
+					
+				}
+			}
+		
+		}
+		
+		out.println("<table>");
+		for(int i = 0; i < 5; i++){
+			out.println("<tr>");
+			for(int j = 0; j < 5; j++){
+				if(encontrado.equals("")){
+					if(mapa[i][j]==0||mapa[i][j]==1||mapa[i][j]==2){
+					out.print("<td><img src=\"imagenes/Heno.png\"style=\"width:80px;height:80px\"></td>");
+					}else if(mapa[i][j]==3){
+							out.print("<td><img src=\"imagenes/fuego.jpg\"style=\"width:80px;height:80px\"></td>");
+					}
+				}else{
+					if(mapa[i][j] == 1 || mapa[i][j] == 2){
+						out.print("<td><img src=\"imagenes/" + mapa[i][j] + ".jpg\"style=\"width:80px;height:80px\"></td>");
+					}else{
+						if(mapa[i][j]==0){
+							out.print("<td><img src=\"imagenes/Heno.png\"style=\"width:80px;height:80px\"></td>");
+						}else if(mapa[i][j]==3){
+							out.print("<td><img src=\"imagenes/fuego.jpg\"style=\"width:80px;height:80px\"></td>");
+						}
+					}
+				}
+				
+			}
+			out.println("</tr>");
+		}
+		out.println("</table>");
+		
+		
+			
+				guardar="";
+				for(int i=0;i<5;i++){//guarda el array en la variable 
+					for(int j=0;j<5;j++){
+					
+						guardar=guardar+mapa[i][j];
+					
+					}
+		 
+				}
+				
+			%>
+            <h2 class="centro">Introduce la coordenadax</h2>
+            <input name="x"type="text"size="1" id="x">
+            <h2 class="centro">Introduce la coordenaday</h2>
+            <input name="y"type="text"size="1"id="y"><br>
+            <input name="guardar"type="hidden"size="25"value="<%=guardar %>">
+             <input name="boton" type="submit" value="Enviar" class="centro">
+        </form>
+        </div>
+</body>
+</html>
