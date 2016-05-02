@@ -50,7 +50,7 @@ public class Ejer03Ex2015 {
 		m.put("guapa", "pretty");
 		m.put("feo", "ugly");
     
-   		 int contador = 0;
+    int contador = 0;
 		
 		 System.out.print("Introduzca una palabra en español: ");
 		 String palabraIntro = s.nextLine();

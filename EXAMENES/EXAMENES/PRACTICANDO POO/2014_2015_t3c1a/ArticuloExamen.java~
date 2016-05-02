@@ -1,0 +1,99 @@
+/**
+ * 4. Mejora la aplicación Gestisimal realizada en clase añadiendo las siguientes funcionalidades:
+ * A) Cada artículo debe tener un campo (variable de instancia) que indique la categoría:
+ * “alimentación”, “limpieza”, “librería y papelería”, “electrodoméstico”, etc. Se debe actualizar el
+ * listado, alta, modificación y borrado para tener en cuenta esta información. 
+ * B) El listado debe aparecer ordenado por la descripción del artículo (en orden alfabético) 
+ * C) Se podrá hacer un listado por categoría (la categoría se pide por teclado).
+ *    
+ *  @author Elena Téllez 
+ */
+import java.util.Collections;
+
+public class ArticuloExamen implements Comparable<ArticuloExamen> {
+  private String codigo;
+  private String descripcion;
+  private String categoria;
+  private double precioDeCompra;
+  private double precioDeVenta;
+  private int stock;
+ 
+  public ArticuloExamen(String co, String de, String ca, double pc, double pv, int st) {
+    this.codigo = co;
+    this.descripcion = de;
+    this.categoria = ca;
+    this.precioDeCompra = pc;
+    this.precioDeVenta = pv;
+    this.stock = st;
+  }
+
+  public ArticuloExamen(String co) {
+    this.codigo = co;
+  }
+
+  public String getCodigo() {
+    return codigo;
+  }
+  
+  public void setCodigo(String codigo) {
+    this.codigo = codigo;
+  }
+  
+  public String getDescripcion() {
+    return descripcion;
+  }
+
+  public void setDescripcion(String descripcion) {
+    this.descripcion = descripcion;
+  }
+  
+  public String getCategoria() {
+    return categoria;
+  }
+
+  public void setCategoria(String categoria) {
+    this.categoria = categoria;
+  }
+
+  public double getPrecioDeCompra() {
+    return precioDeCompra;
+  }
+
+  public void setPrecioDeCompra(double precioDeCompra) {
+    this.precioDeCompra = precioDeCompra;
+  }
+
+  public double getPrecioDeVenta() {
+    return precioDeVenta;
+  }
+
+  public void setPrecioDeVenta(double precioDeVenta) {
+    this.precioDeVenta = precioDeVenta;
+  }
+
+  public int getStock() {
+    return stock;
+  }
+
+  public void setStock(int stock) {
+    this.stock = stock;
+  }
+
+  @Override
+  public String toString() {
+    String cadena = "------------------------------------------";
+    cadena += "\nCódigo: " + this.codigo;  
+    cadena += "\nDescripción: " + this.descripcion;    
+    cadena += "\nCategoria: " + this.categoria; 
+    cadena += "\nPrecio de compra: " + this.precioDeCompra;
+    cadena += "\nPrecio de venta: " + this.precioDeVenta;
+    cadena += "\nStock: " + this.stock + " unidades";
+    cadena += "\n------------------------------------------";
+    return cadena;
+  }
+  
+   @Override
+  public int compareTo(ArticuloExamen a) {
+		return this.descripcion.compareTo(a.getDescripcion());
+	}
+}

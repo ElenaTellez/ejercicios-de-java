@@ -1,6 +1,6 @@
 /**
  *
- * @author Elena Téllez
+ * @author Eliana Ferioli
  */
 public class Piramide_Hueca {
   public static void main(String[] args) {
