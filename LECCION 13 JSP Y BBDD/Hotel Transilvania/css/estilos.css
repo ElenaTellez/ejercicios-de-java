@@ -1,0 +1,120 @@
+@import url(https://www.google.com/fonts#UsePlace:use/Collection:Lobster);
+
+body {
+    background-image:url("../img/Castle_Night.jpg");
+    background-size:cover;	
+    background-repeat: no-repeat;
+    color:red;
+    text-shadow:1px 1px 1px black;
+    background-color: black;
+    font-family: 'Lobster', cursive;
+    font-size: 18px;
+  }
+
+
+h1{
+    text-align: center;
+}
+
+table {
+    font-size: 0.8em;    
+    line-height: 1.4em;
+    font-style: normal;
+    border-collapse:separate;
+    margin: 0 auto;
+    text-align: left;      
+}
+
+tr td#libre{        
+    background:transparent;
+    border:none;   
+    color:red;
+    text-shadow:1px 1px 1px black;
+}
+
+th{
+    padding:10px;
+    color:#fff;
+    text-shadow:1px 1px 1px #568F23;
+    border: 2px solid #E7EFE0;
+    border-bottom:3px solid #9ED929;
+    background-color:red;  
+    border-radius:24px;
+    text-align: center;
+      
+}
+
+thead th:empty{
+    background:transparent;
+    border:none;
+}
+
+tbody td{
+    padding:7px;
+    text-align:center;
+    background-color:#cc99ff;
+    border: 2px solid #E7EFE0;
+    border-radius:24px;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;     
+    color:red;
+    text-shadow:1px 1px 1px black; 
+}
+img.container {
+    width:20px;
+}
+.container{
+    width: 400px;	
+    text-align: center;
+    border: 2px solid #E7EFE0;
+    border-radius:24px;
+    border-style: groove;
+    padding: 20px;    
+    position: absolute;
+    top: 10%;
+    left: 30%;    
+    margin-left: -200px;
+    background-color: buttonshadow;  
+   }
+
+   
+.boton {
+    background-color: white;
+    color:red;
+    text-shadow:1px 1px 1px black;
+    border: 2px solid #E7EFE0;    
+   
+}   
+
+div .menu ul {
+	list-style-type:none;
+	list-style-image:none;
+	margin: 10px;
+	padding:0;
+	display: flex;
+	flex-direction:column; /*por defecto es row horizontal*/	 
+	}
+	
+ 	
+	
+div .menu ul li a{
+	background-color: #4da6ff;
+	color:#ffffe6;
+	font-weight: bold;
+	display:block;/*este elemento se comporta en linea y quiero que lo haga en bloque para usar el ancho del contedor*/
+	margin-right:1px;
+	text-align:center;
+	text-decoration:none;
+	padding:0.4em; /*50% del tamaño del body*/
+	border-radius: 24px; 
+	border-style: groove;
+	cursor: pointer;
+	}
+        
+div .menu ul li a:hover {
+	background-color:red;
+	} 
+        
+a:link {   
+ text-decoration:none;   
+}          
